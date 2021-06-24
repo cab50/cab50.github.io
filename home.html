@@ -47,7 +47,7 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos ||  window.pageYOffset < 50) {
+  if (prevScrollpos > currentScrollPos) {
     document.getElementById("myTopnav").style.top = "0";
   } else {
     document.getElementById("myTopnav").style.top = "-50px";
@@ -57,6 +57,11 @@ var currentScrollPos = window.pageYOffset;
   prevScrollpos = currentScrollPos;
 }
 </script>
+
+var navbar = document.getElementbyId("myTopnav");
+var sticky = navbar.offsetTop;
+function myFunction() {if (window.pageYOffset >= sticky) {navbar.classlist.add("sticky")} else {navbar.classlist.remove("sticky");}}
+
 </body>
 
 <head>
