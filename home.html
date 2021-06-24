@@ -3,6 +3,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>CAB50 VC</title>   
+  
 <style>
   body {margin: 0; font-family: Helvetica;}
   .topnav { background-color: #333;
@@ -24,17 +25,19 @@
   .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
   .topnav.responsive a {float: none; display: block; text-align: left;}
 </style>
+
 </head> 
 
 
 <body>
+
   <div class="topnav" id="myTopnav">
-  <a href="#Entries">Entries</a>
-  <a href="#Achievement">Achievement</a>
-  <a href="#Home" class="active">Home</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-  <i class="fa fa-bars"></i>
-  </a>
+    <a href="#Entries">Entries</a>
+    <a href="#Achievement">Achievement</a>
+    <a href="#Home" class="active">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+    </a>
   </div>
  
  
@@ -42,14 +45,15 @@
   function myFunction() 
   {var x = document.getElementById("myTopnav"); if (x.className === "topnav")
   {x.className += " responsive";} else {x.className = "topnav";}}
-  </script>
   
-
-<script>
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
-var currentScrollPos = window.pageYOffset +300;
-  if (prevScrollpos > currentScrollPos) {
+myFunction();
+var elmnt = document.getElementById("scroll");
+var z = elmnt.scrollTop;
+var x = elmnt.scrollHeight;
+
+  if (z/x < 0.2) {
     document.getElementById("myTopnav").style.top = "0";
   } else {
     document.getElementById("myTopnav").style.top = "-50px";
@@ -74,14 +78,16 @@ var currentScrollPos = window.pageYOffset +300;
   .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 </style>
 </head>
-<body>
-  <div class="container" >
+<body id="scroll" >
+
+  <div class="container">
   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7jaF1Erha4LdTt72llumn9nesXV_SHZLRQpL_GP_-Ti2GUPecY9D4cl9F_JEqzlg72A&usqp=CAU" alt="Snow" style="width:100%;">
   <div class="bottom-left"></div>
   <div class="top-left"></div>
   <div class="top-right"></div>
   <div class="bottom-right"></div>
   <div class="centered">Hello Bye Hello</div>
+  <p id="demo"> 12345</p>
   </div>
 </body>
 	
@@ -104,3 +110,25 @@ var currentScrollPos = window.pageYOffset +300;
 <p> sdfgh </p>
 </div>
 <p> sdfgh </p>
+
+
+<script>
+function myFunction() {
+  var elmnt = document.getElementById("scroll");
+  var x = elmnt.scrollHeight;
+  var y = elmnt.scrollTop;
+  document.getElementById ("demo").innerHTML = "Horizontally: " + x + "px<br>Vertically: " + y + "px" + y/x;
+}
+</script>
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
