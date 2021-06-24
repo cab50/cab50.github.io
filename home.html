@@ -100,6 +100,40 @@ var x = elmnt.scrollHeight;
 		</div>
 	</body>
 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.mileage2 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+</style>
+</head>
+<body>
+
+<h2>Responsive Iframe</h2>
+<h3>Maintain Aspect Ratio 16:9</h3>
+<p>Resize the window to see the effect.</p>
+
+<div class="mileage2"> 
+  <iframe class="responsive-iframe" src="<iframe width="500" height="200" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMd88O7Z2OAM4F_CTxV2Esh8eHrjxLwJ_GVWnBUSWBPBP-bv3Y8z34cZS670flbBnhnrIcjxh7O7yy/pubchart?oid=1117453103&amp;format=interactive"></iframe>"></iframe>
+</div>
+
+</body>
+	
 <section>
 <div class="breakdown"><script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="mxzkngoj-home" data-w="750" data-h="800" data-domain="my"></div></div>
 </section>
