@@ -3,22 +3,26 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-.Poster1 {
-	height: 850px;
-    text-align:center;
-    }
-.img1{
-	height:auto;
-    width:auto;
-    }
-</style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
 
 </head>
-<body>
-	<a> test 3 </a>
-    <div class="Poster1" id="Poster1">
-    <img class="img1" src = "https://image.freepik.com/free-vector/singapore-travel-poster_1284-25400.jpg">
-   </div>
+	<body>
+<div class="imgbox">
+    <img class="center-fit" src='https://image.freepik.com/free-vector/singapore-travel-poster_1284-25400.jpg'>
+</div>
    
     <script type="text/javascript"> document.getElementById("Poster1").onclick = function URL() {location.href = 'www.google.com.sg';}</script> 
   <script type="text/javascript"> document.getElementById("Poster1").onmousewheel= function URL() {a href = 'home.html';}</script>
