@@ -35,6 +35,64 @@
 	{var x = document.getElementById("myTopnav"); if (x.className === "topnav")
    {x.className += " responsive";} else {x.className = "topnav";}}
    </script>
+	
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body>
+
+<h2>Image Text</h2>
+<p>How to place text over an image:</p>
+
+<div class="container">
+  <img src="img_snow_wide.jpg" alt="Snow" style="width:100%;">
+  <div class="bottom-left">""</div>
+  <div class="top-left">Top Left</div>
+  <div class="top-right">Top Right</div>
+  <div class="bottom-right">Bottom Right</div>
+  <div class="centered">Centered</div>
+</div>
+
+</body>
+	
 </body>
 	<header class="masthead">
 	<background-image: url('https://lh3.googleusercontent.com/d/1iNBfgDlsBLFyw8qwr8EjLwmebw6TXulW'); background-size: cover; height:500px; padding-top:80px;">
@@ -45,7 +103,8 @@
 	.masthead-event {text-align: center; font-size: 200%;}
 	.masthead-date {text-align: center; font-size: 200%;}
 	
-	</style>			
+	
+		</style>			
 </body>
 	
 <section>	   
