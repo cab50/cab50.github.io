@@ -45,25 +45,24 @@ body {margin: 0; font-family: Helvetica;}
   	}
 	}
 @media screen and (max-width: 600px) {
-  	.topnav.responsive a:hover {color: #563f46;}
-  	.topnav.responsive a.active {background-color: #87bdd8; color: black;}
-  	.topnav.responsive {position: fixed;}
-  	.topnav.responsive .icon {margin-right:100px; position: absolute; right: 0; top: 0;}
-  	.topnav.responsive a {background-color: #b7d7e8; float: none; display: block; text-align:right;}
-	.topnav b {float: left; padding: 3px 5px; properties: 0;
-  	} 
+  .topnav.responsive a:hover {color: #563f46;}
+  .topnav.responsive a.active {background-color: #87bdd8; color: black;}
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {margin-right:100px; position: absolute; right: 0; top: 0;}
+  .topnav.responsive a {background-color: #b7d7e8; float: none; display: block; text-align:right;}
+  .topnav b {float: left; padding: 3px 5px; properties: 0;} 
 </style>
 </head> 
 
 
 <body>	
   <div class="topnav" id="myTopnav">
-    <b href="#"""><iframe width="124" height="50" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMd88O7Z2OAM4F_CTxV2Esh8eHrjxLwJ_GVWnBUSWBPBP-bv3Y8z34cZS670flbBnhnrIcjxh7O7yy/pubchart?oid=1117453103&amp;format=interactive"></iframe></b>
-    <a href="#Entries">Entries</a>
-    <a href="#Achievement">Achievement</a>
-    <a href="#Home" class="active">Home</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    	<i class="fa fa-bars"></i></a>
+  <b href="#"""><iframe width="124" height="50" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQMd88O7Z2OAM4F_CTxV2Esh8eHrjxLwJ_GVWnBUSWBPBP-bv3Y8z34cZS670flbBnhnrIcjxh7O7yy/pubchart?oid=1117453103&amp;format=interactive"></iframe></b>
+  <a href="#Entries">Entries</a>
+  <a href="#Achievement">Achievement</a>
+  <a href="#Home" class="active">Home</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i></a>
   </div>
  
   <script>
@@ -71,12 +70,12 @@ body {margin: 0; font-family: Helvetica;}
   {var x = document.getElementById("myTopnav"); if (x.className === "topnav")
   {x.className += " responsive";} else {x.className = "topnav";}}
   
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-myFunction();
-var elmnt = document.getElementById("scroll");
-var z = elmnt.scrollTop;
-var x = elmnt.scrollHeight;
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+  myFunction();
+  var elmnt = document.getElementById("scroll");
+  var z = elmnt.scrollTop;
+  var x = elmnt.scrollHeight;
 
   	if (z/x < 0.2) {
     document.getElementById("myTopnav").style.top = "0";
@@ -114,16 +113,14 @@ var x = elmnt.scrollHeight;
 </body>
 	
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
 <style>
-.vismehome { margin-left:25%; margin-right:25%;}
-
-@media screen and (max-width: 600px) {.vismehome {position: center center; margin-left: 5%; margin-right: 5%;}}
-  
-	</style>
-	<body>
-<div class="vismehome">
-<script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="mxzkngoj-home" data-w="750" data-h="800" data-domain="my">
-	</div>
+  .vismehome { margin-left:25%; margin-right:25%;}
+  @media screen and (max-width: 600px) {.vismehome {position: center center; margin-left: 5%; margin-right: 5%;}}
+</style>
+<body>
+  <div class="vismehome">
+  <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="mxzkngoj-home" data-w="750" data-h="800" data-domain="my">
+  </div>
 </body>
