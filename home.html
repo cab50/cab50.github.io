@@ -59,7 +59,7 @@ var elmnt = document.getElementById("scroll");
 var z = elmnt.scrollTop;
 var x = elmnt.scrollHeight;
 
-  if (z/x < 0.1) {
+  if (z/x < 0.05) {
     document.getElementById("myTopnav").style.top = "0";
   } else {
     document.getElementById("myTopnav").style.top = "-50px";
@@ -102,7 +102,7 @@ var x = elmnt.scrollHeight;
 <style>
 .vismebackground {background-color: black}
   .vismehome {margin-left:25%; margin-right:25%;}
-  @media screen and (max-width: 600px) {.vismehome {margin-left: 5%; margin-right: 5%; url('https://drive.google.com/uc?id=1kyknTgNgCvEBUX12ebS5tr2FwniG68dI')}}
+  @media screen and (max-width: 600px) {.vismehome {margin-left: 0%; margin-right: 0%; url('https://drive.google.com/uc?id=1kyknTgNgCvEBUX12ebS5tr2FwniG68dI')}}
 </style>
 <body>
 <div class="vismebackground">
