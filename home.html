@@ -4,6 +4,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>CAB50 VC</title>   
   
+	
+	
+	
+	
 <style>
   body {margin: 0; font-family: Helvetica;}
   .topnav { background-color: #333;
@@ -24,6 +28,16 @@
   .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {position: absolute; right: 0; top: 0;}
   .topnav.responsive a {float: none; display: block; text-align: left;}
+	.mileage
+{	
+text-align: center;
+margin-left: auto !important;
+margin-right: auto !important;
+position: relative;  
+height: 0; 
+overflow: hidden; 
+max-width: 100%; } 
+}
 </style>
 
 </head> 
@@ -31,6 +45,9 @@
 
 <body>
 
+  <div class='mileage'><iframe width='157' height='69' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQMd88O7Z2OAM4F_CTxV2Esh8eHrjxLwJ_GVWnBUSWBPBP-bv3Y8z34cZS670flbBnhnrIcjxh7O7yy/pubchart?oid=1117453103&format=interactive'></iframe></div>
+  </div>
+	
   <div class="topnav" id="myTopnav">
     <a href="#Entries">Entries</a>
     <a href="#Achievement">Achievement</a>
@@ -70,25 +87,12 @@ var x = elmnt.scrollHeight;
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  .container {position: relative; text-align: center; color: black; font-size:30px; margin-top:0px}
+  .container {position: relative; text-align: center; color: black; font-size:8vw; margin-top:0px}
   .bottom-left {position: absolute; bottom: 8px; left: 16px;}
   .top-left {position: absolute; top: 8px; left: 16px;}
   .top-right {position: absolute; top: 8px; right: 16px;}
   .bottom-right {position: absolute; bottom: 8px; right: 16px;}
-  .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-	
-.mileage
-{	
-text-align: center;
-margin-left: auto !important;
-margin-right: auto !important;
-position: relative; 
-padding-bottom: 56.25%; 
-height: 0; 
-overflow: hidden; 
-max-width: 100%; } 
-}
-	
+  .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}	
 </style>
 </head>
 <body>
@@ -98,8 +102,6 @@ max-width: 100%; }
   <div class="top-left"></div>
   <div class="top-right"></div>
   <div class="bottom-right">
-  <div class='mileage'><iframe width='157' height='69' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/e/2PACX-1vQMd88O7Z2OAM4F_CTxV2Esh8eHrjxLwJ_GVWnBUSWBPBP-bv3Y8z34cZS670flbBnhnrIcjxh7O7yy/pubchart?oid=1117453103&format=interactive'></iframe></div>
-  </div>
   <div class="centered">CAB50<br>Virtual Challenge</div>
   </div>
 </body>
