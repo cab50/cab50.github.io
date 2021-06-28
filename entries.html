@@ -6,7 +6,7 @@
   
 <style>
   body {margin: 0; font-family: Helvetica;}
-  .topnav { background-color: #101820FF;
+  .topnav { background-color: black;
   position: fixed;
   height: 50px;
   top: 0;
@@ -14,9 +14,9 @@
   display: block;
   transition: top 0.3s;
   z-index:1000;//add z-index}
-  .topnav a {float: right; display: block; color: #f2f2f2; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
-  .topnav a:hover {color: yellow;}
-  .topnav a.active {background-color: #89ABE3FF; color: black;}
+  .topnav a {float: right; display: block; color: white; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
+  .topnav a:hover {color: #73c2fb;}
+  .topnav a.active {background-color: #73c2fb; color: black}
   .topnav .icon {display: none; color: white}
   .topnav #tracker {float: left; padding: 3px 10px;}
   @media screen and (max-width: 600px) {
@@ -24,11 +24,11 @@
   .topnav #tracker {display: block;}
   .topnav a.icon {float: right; display: block;}}
   @media screen and (max-width: 600px) {
-  .topnav.responsive {position: fixed;}
-  .topnav.responsive .icon {margin-right: 100px; position: absolute; right: 0; top: 0; color:pink}
-  .topnav.responsive a {background-color: #101820FF; float: none; display: block; text-align: right; color:pink}
-  .topnav.responsive a:hover {color: white;}
-  .topnav.responsive a.active {background-color: #89ABE3FF; float: none; display: block; text-align: right; color:black}
+  .topnav.responsive {background-color: black; position: fixed;}
+  .topnav.responsive .icon {margin-right: 100px; position: absolute; right: 0; top: 0; color:white}
+  .topnav.responsive a {background-color: #black; float: none; display: block; text-align: right; color:white}
+  .topnav.responsive a:hover {color: #73c2fb;}
+  .topnav.responsive a.active {float: none; display: block; text-align: right; background-color: #73c2fb; color: black}
 </style>
 
 </head> 
@@ -53,13 +53,14 @@
   {x.className += " responsive";} else {x.className = "topnav";}}
   
 var prevScrollpos = window.pageYOffset;
+	  
 window.onscroll = function() {
-myFunction();
+//myFunction();
 var elmnt = document.getElementById("scroll");
 var z = elmnt.scrollTop;
 var x = elmnt.scrollHeight;
 
-  if (z/x < 0.1) {
+  if (z/x < 0.2) {
     document.getElementById("myTopnav").style.top = "0";
   } else {
     document.getElementById("myTopnav").style.top = "-50px";
@@ -69,41 +70,61 @@ var x = elmnt.scrollHeight;
   prevScrollpos = currentScrollPos;
 }
 </script>
+</body>
 
 	
-</body>
+
 
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  .container {position: relative; text-align: center; color: black; font-size:6vw; margin-top:50px}
+  .container {display:inline block; margin-top :30px; background-color: black; position: relative; text-align: center; color: black; font-size:6vw;}
   .bottom-left {position: absolute; bottom: 8px; left: 16px;}
   .top-left {position: absolute; top: 8px; left: 16px;}
   .top-right {position: absolute; top: 8px; right: 16px;}
   .bottom-right {position: absolute; bottom: 8px; right: 16px;}
   .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+  
 </style>
 </head>
-<body id="scroll" >
+<body id="scroll" display="block">
   <div class="container">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7jaF1Erha4LdTt72llumn9nesXV_SHZLRQpL_GP_-Ti2GUPecY9D4cl9F_JEqzlg72A&usqp=CAU" style="width:100%;">
+
+  <img src="https://drive.google.com/uc?id=1kyknTgNgCvEBUX12ebS5tr2FwniG68dI" style="max-width:100%;height=100% margin-top=500px">
   <div class="bottom-left"></div>
   <div class="top-left"></div>
   <div class="top-right"></div>
   <div class="bottom-right"></div>
-  <div class="centered">CAB50<br>Sports Challenge</div>
+  <div class="centered"></div>
   </div>
 </body>
+
 
 	
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <style>
-  .searchhome {position: center center}
+.vismebackground {background-color: black}
+  .vismeachievement {margin-left:25%; margin-right:25%;}
+  @media screen and (max-width: 600px) {.vismehome {margin-left: 0%; margin-right: 0%;}}
 </style>
 <body>
-  <div class="searchhome">
+<div class="vismebackground">
+  <div class="vismeachievement">
+  <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="z4pnyyg1-achievement" data-w="800" data-h="1800" data-domain="my"></script>
+  </div></div>
+</body>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<style>
+	.search {text-align: center}
+</style>
+<body>
+  <div class="search">
   <iframe width="1200" height="525" src="https://datastudio.google.com/embed/reporting/57015068-1d41-48fb-9e5f-130bfc140592/page/Mg5PC" frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 </body>
+	
