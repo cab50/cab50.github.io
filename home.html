@@ -6,7 +6,7 @@
 	
 <style>
   body {margin: 0; font-family: Helvetica;}
-  .topnav { background-color: #333;
+  .topnav { background-color: #b7d7e8;
   position: fixed;
   top: 0;
   height: 50px;
@@ -14,17 +14,19 @@
   display: block;
   transition: top 0.3s;
   z-index:1000;//add z-index}
-  .topnav a {float: right; display: block; color: #f2f2f2; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
-  .topnav a:hover {background-color: #900C3F; color: black;}
-  .topnav a.active {background-color: #FF5733; color: white;}
+  .topnav a {float: right; display: block; color: black; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
+  .topnav a:hover {background-color: #daebe8; color: black;}
+  .topnav a.active {background-color: #87bdd8; color: black;}
   .topnav .icon {display: none;}
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
   .topnav a{display: none;}
   .topnav a.icon {float: right; display: block;}}
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 600px) {
+  .topnav.responsive a:hover {color: #563f46;}
+  .topnav.responsive a.active {background-color: #87bdd8; color: black;}
   .topnav.responsive {position: fixed;}
   .topnav.responsive .icon {margin-right:100px; position: absolute; right: 0; top: 0;}
-  .topnav.responsive a {float: none; display: block; text-align:right;}
+  .topnav.responsive a {background-color: #b7d7e8; float: none; display: block; text-align:right;}
 .topnav b
 {
 float: left;
@@ -76,10 +78,11 @@ var x = elmnt.scrollHeight;
 </script>	
 </body>
 
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  .container {position: relative; text-align: center; color: black; font-size:8vw; margin-top:50px}
+  .container {position: relative; text-align: center; color: black; font-size:8vw; margin-top:50px;}
   .bottom-left {position: absolute; bottom: 8px; left: 16px;}
   .top-left {position: absolute; top: 8px; left: 16px;}
   .top-right {position: absolute; top: 8px; right: 16px;}
@@ -89,12 +92,12 @@ var x = elmnt.scrollHeight;
 </head>
 <body>
   <div class="container">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7jaF1Erha4LdTt72llumn9nesXV_SHZLRQpL_GP_-Ti2GUPecY9D4cl9F_JEqzlg72A&usqp=CAU" style="width:100%;">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG7jaF1Erha4LdTt72llumn9nesXV_SHZLRQpL_GP_-Ti2GUPecY9D4cl9F_JEqzlg72A&usqp=CAU" style="width:100%;height:auto;overflow:hidden">
   <div class="bottom-left"></div>
   <div class="top-left"></div>
   <div class="top-right"></div>
   <div class="bottom-right"></div>
-  <div class="centered">CAB50<br>Virtual Challenge</div>
+  <div class="centered">CAB50<br>Sports Challenge</div>
   </div>
 </body>
 	
@@ -102,13 +105,17 @@ var x = elmnt.scrollHeight;
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
 <style>
-	.vismehome {width=100%; height=500px;}
+.vismehome { margin-left:30%; margin-right:30%;}
+
+@media screen and (max-width: 600px) {.vismehome {position: center center; margin-left: 30%; margin-right: 5%;}}
+  
 	</style>
 	<body>
 <div class="vismehome">
 <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="mxzkngoj-home" data-w="750" data-h="800" data-domain="my">
 	</div>
 </body>
+
 
 <p> sdfgh </p>
 </div>
