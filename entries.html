@@ -100,9 +100,45 @@ var x = elmnt.scrollHeight;
 </body>
 
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
 	.search {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -118,39 +154,41 @@ var x = elmnt.scrollHeight;
 	width: 100%;
 	height: 100%;
 	}
+    
 </style>
+</head>
 <body>
-	
+
+<button class="collapsible">Search Individual</button>
+<div class="content">
   <div class="search">
-  <iframe width="1200" height="500" src="https://datastudio.google.com/embed/reporting/57015068-1d41-48fb-9e5f-130bfc140592/page/Mg5PC" frameborder="0" style="border:0" allowfullscreen></iframe>
-  
+  <iframe width="600" height="245" src="https://datastudio.google.com/embed/reporting/57015068-1d41-48fb-9e5f-130bfc140592/page/Mg5PC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>    
+</div>
+
+
+<button class="collapsible">Check Records</button>
+<div class="content">
+  <div class="search">
+  <iframe width="600" height="245" src="https://datastudio.google.com/embed/reporting/70df8710-907a-4f06-99c9-d02e0db4d334/page/Mg5PC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>    
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </body>
-<br>	
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<style>
-	.search2 {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px; height: 0; overflow: hidden;
-	}
-	display:inline block; margin-top :1200px;
-	.search2 iframe,
-	.search2 object,
-	.search2 embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	}
-</style>
-<body display="block">
-	
-  <div class="search2">
- <iframe width="1200" height="500" src="https://datastudio.google.com/embed/reporting/70df8710-907a-4f06-99c9-d02e0db4d334/page/Mg5PC" frameborder="0" style="border:0" allowfullscreen></iframe>	  
-  </div> 
-</body>	
-	
-	
