@@ -18,10 +18,10 @@
   .topnav a:hover {color: #73c2fb;}
   .topnav a.active {background-color: #73c2fb; color: black}
   .topnav .icon {display: none; color: white}
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
   .topnav a{display: none;}
   .topnav a.icon {float: right; display: block;}}
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 700px) {
   .topnav.responsive {background-color: black; position: fixed;}
   .topnav.responsive .icon {margin-right: 82px; position: absolute; right: 0; top: 0; color:white}
   .topnav.responsive a {font-size: 12px; padding: 7px; background-color: #black; float: none; display: block; text-align: right; color:white}
@@ -108,17 +108,20 @@ var x = elmnt.scrollHeight;
 <style>
 .collapsible {
   font-family: Helvetica;
-  background-color: #808080;
+  background-color: white;
   color: black;
   cursor: pointer;
-  padding: 17px;
+  padding: 10px;
   width: 100%;
   height: auto;
   border: none;
   text-align: left;
   outline: none;
   font-size: 14px;
-}
+  border-style: ridge;
+  border-width: thin;
+  border-color: black;
+} 
 
 .active, .collapsible:hover {
   background-color: #73c2fb;
@@ -141,7 +144,7 @@ var x = elmnt.scrollHeight;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #73c2fb;
+  background-color: white;
 }
 
 	.search {
@@ -159,6 +162,10 @@ var x = elmnt.scrollHeight;
 	width: 100%;
 	height: 100%;
 	}
+    
+
+  @media screen and (max-width: 700px) {
+  .collapsible {padding: 5px; font-size: 12px;}     
     
 </style>
 </head>
@@ -197,14 +204,14 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 </body>
-
+<br>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .bottom {
-font-family: 'Lobster', cursive;
-background-color: black;
+font-family: 'Lobster';
+background-color: white;
 text-align: center;
 width: 100%;
 }
@@ -212,26 +219,29 @@ width: 100%;
 .singapore {
 padding-top: 5px;
 padding-bottom: 5px;
-font-size: 30px;
+font-size: 22px;
 font-weight: bold;
-color: white;
-background-color: black;
+color: black;
+background-color: white;
 }
 
 .link {
 line-height: 1.6;
 padding-bottom: 5px;
-font-size: 20px;
+font-size: 16px;
 text-decoration: underline;
-color: red;
-background-color: black;
+color: black;
+background-color: white;
 }
 
-.link a:link {color: red;}
+.link a:link {color: black;}
 .link a:visited {color: red;}
 .link a:hover {color: #73c2fb;}
 .link a:active {color: #73c2fb;}
 
+  @media screen and (max-width: 700px) {
+  .singapore {font-size: 20px;} 
+  .link {font-size: 14px;}
 </style>
 </head>
 
@@ -247,7 +257,7 @@ background-color: black;
     <a href="https://www.timeout.com/singapore/things-to-do/the-best-cycling-trails-in-singapore">Cycling Trails</a><br>
     <a href="https://www.timeout.com/singapore/sport-and-fitness/the-best-public-pools-in-singapore">Public Pools</a><br>
     <a href="http://www.weather.gov.sg/weather-rain-area-50kmwbgt">Weather</a><br>
-    <a href="https://www.wbgt.sg/">WBBGT</a><br>
+    <a href="https://www.wbgt.sg/">WBGT</a><br>
     
 </div>
 </body>
