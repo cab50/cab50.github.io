@@ -1,0 +1,263 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>CAB50 VC</title>   
+  
+<style>
+  body {margin: 0; font-family: Helvetica;}
+  .topnav { background-color: black;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  z-index:1000;//add z-index}
+  .topnav a {float: right; display: block; color: white; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
+  .topnav a:hover {color: #73c2fb;}
+  .topnav a.active {background-color: #73c2fb; color: black}
+  .topnav .icon {display: none; color: white}
+  @media screen and (max-width: 700px) {
+  .topnav a{display: none;}
+  .topnav a.icon {float: right; display: block;}}
+  @media screen and (max-width: 700px) {
+  .topnav.responsive {background-color: black; position: fixed;}
+  .topnav.responsive .icon {margin-right: 82px; position: absolute; right: 0; top: 0; color:white}
+  .topnav.responsive a {font-size: 12px; padding: 7px; background-color: #black; float: none; display: block; text-align: right; color:white}
+  .topnav.responsive a:hover {color: #73c2fb;}
+  .topnav.responsive a.active {float: none; display: block; text-align: right; background-color: transparent; color: #73c2fb}
+  .topnav #submit {float: left; display: block; color: white; text-align: right; padding: 17px 10px; text-decoration: none; font-size: 12px;}
+  .topnav #submit:hover {background-color: #73c2fb; color: black; text-decoration: underline; font-weight: bold;}
+</style>
+
+</head> 
+
+
+<body>
+
+  <div class="topnav" id="myTopnav">
+  <a id="submit" href="https://forms.gle/5UhG5agaC67PLwg3A">Submit Activity</a>
+  <a id="submit" href="https://forms.gle/2BhPU3Dd4ns3uxBAA">Upload Gallery</a>
+    <a href="https://cab50.github.io/gallery">Gallery</a>
+    <a href="https://cab50.github.io/entries" class="active">Entries</a>
+    <a href="https://cab50.github.io/leaderboard">Leaderboard</a>
+    <a href="https://cab50.github.io/units">Units</a>
+    <a href="https://cab50.github.io/home">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    	<i class="fa fa-bars"></i>
+    </a>
+  </div>
+ 
+ 
+  <script>
+  function myFunction() 
+  {var x = document.getElementById("myTopnav"); if (x.className === "topnav")
+  {x.className += " responsive";} else {x.className = "topnav";}}
+  
+var prevScrollpos = window.pageYOffset;
+	  
+window.onscroll = function() {
+//myFunction();
+var elmnt = document.getElementById("scroll");
+var z = elmnt.scrollTop;
+var x = elmnt.scrollHeight;
+
+  if (z/x < 0.2) {
+    document.getElementById("myTopnav").style.top = "0";
+  } else {
+    document.getElementById("myTopnav").style.top = "-50px";
+    var y = document.getElementById("myTopnav")
+    y.className = "topnav";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</body>
+
+	
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .container {display:inline block; margin-top :50px; background-color: black; position: relative; text-align: center; color: black; font-size:6vw;}
+  .bottom-left {position: absolute; bottom: 8px; left: 16px;}
+  .top-left {position: absolute; top: 8px; left: 16px;}
+  .top-right {position: absolute; top: 8px; right: 16px;}
+  .bottom-right {position: absolute; bottom: 8px; right: 16px;}
+  .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+  
+</style>
+</head>
+<body id="scroll" display="block">
+  <div class="container">
+  <img src="https://drive.google.com/uc?id=1KdSlxXxQnOVhLneTGiJj2coDGK5W74eP" style="max-width:100%;height=100% margin-top=500px">
+  <div class="bottom-left"></div>
+  <div class="top-left"></div>
+  <div class="top-right"></div>
+  <div class="bottom-right"></div>
+  <div class="centered"></div>
+  </div>
+</body>
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+  font-family: Helvetica;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14px;
+  border-style: ridge;
+  border-width: thin;
+  border-color: black;
+} 
+
+.active, .collapsible:hover {
+  background-color: #73c2fb;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+}
+
+	.search {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+	}
+
+	.search iframe,
+	.search object,
+	.search embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	}
+    
+
+  @media screen and (max-width: 700px) {
+  .collapsible {padding: 5px; font-size: 12px;}     
+    
+</style>
+</head>
+<body>
+
+<button class="collapsible">Search Individual</button>
+<div class="content">
+  <div class="search">
+  <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/c181b341-7008-4233-8906-02d824345f66/page/HmtRC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>    
+</div>
+
+
+<button class="collapsible">Check Records</button>
+<div class="content">
+  <div class="search">
+  <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/9b053375-2c3b-4125-9cb8-a1b4b5826519/page/HmtRC" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>    
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+</body>
+<br>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.bottom {
+font-family: 'Lobster';
+background-color: white;
+text-align: center;
+width: 100%;
+}
+
+.singapore {
+padding-top: 5px;
+padding-bottom: 5px;
+font-size: 22px;
+font-weight: bold;
+color: black;
+background-color: white;
+}
+
+.link {
+line-height: 1.6;
+padding-bottom: 5px;
+font-size: 16px;
+text-decoration: underline;
+color: black;
+background-color: white;
+}
+
+.link a:link {color: black;}
+.link a:visited {color: red;}
+.link a:hover {color: #73c2fb;}
+.link a:active {color: #73c2fb;}
+
+  @media screen and (max-width: 700px) {
+  .singapore {font-size: 20px;} 
+  .link {font-size: 14px;}
+</style>
+</head>
+
+<body>
+<div class="bottom">
+	<div class="singapore">
+    All around Singapore
+</div>
+<div class="bottom">
+	<div class="link">
+    
+    <a href="https://www.timeout.com/singapore/sport-and-fitness/the-best-running-trails-in-singapore">Running Trails</a><br>
+    <a href="https://www.timeout.com/singapore/things-to-do/the-best-cycling-trails-in-singapore">Cycling Trails</a><br>
+    <a href="https://www.timeout.com/singapore/sport-and-fitness/the-best-public-pools-in-singapore">Public Pools</a><br>
+    <a href="http://www.weather.gov.sg/weather-rain-area-50kmwbgt">Weather</a><br>
+    <a href="https://www.wbgt.sg/">WBGT</a><br>
+    
+</div>
+</body>
