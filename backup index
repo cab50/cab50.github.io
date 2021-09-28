@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+    </style>
+
+</head>
+	<body>
+<div class="imgbox" id="Poster1">
+    <img class="center-fit" src='https://drive.google.com/uc?id=1Qut5_jQlXFDQ_4K0vKrUi2qXaa0mB8yb'>
+</div>
+   
+    <script type="text/javascript"> document.getElementById("Poster1").onclick = function URL() {location.href = 'home.html';}</script> 
+  <script type="text/javascript"> document.getElementById("Poster1").onmousewheel= function URL() {location.href = 'home.html';}</script>
+		
+
+</body>
+</html>
