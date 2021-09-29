@@ -14,7 +14,7 @@
   display: block;
   transition: top 0.3s;
   z-index:1000;//add z-index}
-  .topnav a {float: right; display: block; color: white; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
+  .topnav a {float: right; display: block; color: white; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px; }
   .topnav a:hover {color: #73c2fb;}
   .topnav a.active {background-color: #73c2fb; color: black}
   .topnav .icon {display: none; color: white}
@@ -24,9 +24,9 @@
   @media screen and (max-width: 700px) {
   .topnav.responsive {background-color: black; position: fixed;}
   .topnav.responsive .icon {margin-right: 82px; position: absolute; right: 0; top: 0; color:white}
-  .topnav.responsive a {font-size: 12px; padding: 7px; background-color: #black; float: none; display: block; text-align: right; color:white}
+  .topnav.responsive a {font-size: 12px; padding: 7px; background-color: black; float: none; display: block; text-align: right; color:white}
   .topnav.responsive a:hover {color: #73c2fb;}
-  .topnav.responsive a.active {float: none; display: block; text-align: right; background-color: transparent; color: #73c2fb}
+  .topnav.responsive a.active {float: none; display: block; text-align: right; background-color: black; color: #73c2fb}
   .topnav #submit {float: left; display: block; color: white; text-align: right; padding: 17px 10px; text-decoration: none; font-size: 12px;}
   .topnav #submit:hover {background-color: #73c2fb; color: black; text-decoration: underline; font-weight: bold;}
 </style>
@@ -81,33 +81,26 @@ var x = elmnt.scrollHeight;
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  .container {display:inline block; margin-top :50px; background-color: black; position: relative; text-align: center; color: black; font-size:6vw;}
-  .bottom-left {position: absolute; bottom: 8px; left: 16px;}
-  .top-left {position: absolute; top: 8px; left: 16px;}
-  .top-right {position: absolute; top: 8px; right: 16px;}
-  .bottom-right {position: absolute; bottom: 8px; right: 16px;}
-  .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-  
+  .container {display:inline block; margin-top :40px; background-color: black; position: relative; text-align: center; color: black; font-size:6vw;} 
+  #logo {background-color: black;}
+  @media screen and (min-width: 550px) {.container {margin-left: 10%; margin-right: 10%;}
+  @media screen and (min-width: 700px) {.container {margin-left: 14%; margin-right: 14%;}
+  @media screen and (min-width: 900px) {.container {margin-left: 18%; margin-right: 18%;}
+  @media screen and (min-width: 1000px) {.container {margin-left: 24%; margin-right: 24%;}  
 </style>
 </head>
-<body id="scroll" display="block">
+<body id="logo" display="block">
   <div class="container">
-  <img src="https://drive.google.com/uc?id=1KdSlxXxQnOVhLneTGiJj2coDGK5W74eP" style="max-width:100%;height=100% margin-top=500px">
-  <div class="bottom-left"></div>
-  <div class="top-left"></div>
-  <div class="top-right"></div>
-  <div class="bottom-right"></div>
-  <div class="centered"></div>
+  <img src="https://drive.google.com/uc?id=1EQD23EBrIhCkJ-D-XrUbkF7i60iGOP6L" style="max-width:100%;height=100%">
   </div>
 </body>
 
 
-	
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta charset="utf-8">
 <style>
-.vismebackground {background-color: #73c2fb}
+.vismebackground {background-color: #black}
   .vismehome {margin-left:21%; margin-right:21%;}
   @media screen and (max-width: 2100px) {.vismehome {margin-left: 18%; margin-right: 18%;}
   @media screen and (max-width: 1800px) {.vismehome {margin-left: 15%; margin-right: 15%;}
@@ -119,6 +112,10 @@ var x = elmnt.scrollHeight;
 <body>
 <div class="vismebackground">
   <div class="vismehome">
-  <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="w486g41k-unit" data-w="750" data-h="1450" data-domain="my"></script>  
+  <script src="//my.visme.co/visme-embed.js"></script><div class="visme_d" data-url="w4z09rdr-unit" data-w="750" data-h="2010" data-domain="my"></script>  
   </div></div>
 </body>
+
+  
+</body>
+</head>
