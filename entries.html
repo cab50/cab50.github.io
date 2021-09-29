@@ -14,7 +14,7 @@
   display: block;
   transition: top 0.3s;
   z-index:1000;//add z-index}
-  .topnav a {float: right; display: block; color: white; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px;}
+  .topnav a {float: right; display: block; color: white; text-align: center; padding: 17px 14px; text-decoration: none; font-size: 14px; }
   .topnav a:hover {color: #73c2fb;}
   .topnav a.active {background-color: #73c2fb; color: black}
   .topnav .icon {display: none; color: white}
@@ -24,9 +24,9 @@
   @media screen and (max-width: 700px) {
   .topnav.responsive {background-color: black; position: fixed;}
   .topnav.responsive .icon {margin-right: 82px; position: absolute; right: 0; top: 0; color:white}
-  .topnav.responsive a {font-size: 12px; padding: 7px; background-color: #black; float: none; display: block; text-align: right; color:white}
+  .topnav.responsive a {font-size: 12px; padding: 7px; background-color: black; float: none; display: block; text-align: right; color:white}
   .topnav.responsive a:hover {color: #73c2fb;}
-  .topnav.responsive a.active {float: none; display: block; text-align: right; background-color: transparent; color: #73c2fb}
+  .topnav.responsive a.active {float: none; display: block; text-align: right; background-color: black; color: #73c2fb}
   .topnav #submit {float: left; display: block; color: white; text-align: right; padding: 17px 10px; text-decoration: none; font-size: 12px;}
   .topnav #submit:hover {background-color: #73c2fb; color: black; text-decoration: underline; font-weight: bold;}
 </style>
@@ -81,26 +81,19 @@ var x = elmnt.scrollHeight;
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-  .container {display:inline block; margin-top :50px; background-color: black; position: relative; text-align: center; color: black; font-size:6vw;}
-  .bottom-left {position: absolute; bottom: 8px; left: 16px;}
-  .top-left {position: absolute; top: 8px; left: 16px;}
-  .top-right {position: absolute; top: 8px; right: 16px;}
-  .bottom-right {position: absolute; bottom: 8px; right: 16px;}
-  .centered {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-  
+  .container {display:inline block; margin-top :40px; background-color: black; position: relative; text-align: center; color: black; font-size:6vw;} 
+  #logo {background-color: black;}
+  @media screen and (min-width: 550px) {.container {margin-left: 10%; margin-right: 10%;}
+  @media screen and (min-width: 700px) {.container {margin-left: 14%; margin-right: 14%;}
+  @media screen and (min-width: 900px) {.container {margin-left: 18%; margin-right: 18%;}
+  @media screen and (min-width: 1000px) {.container {margin-left: 24%; margin-right: 24%;}  
 </style>
 </head>
-<body id="scroll" display="block">
+<body id="logo" display="block">
   <div class="container">
-  <img src="https://drive.google.com/uc?id=1KdSlxXxQnOVhLneTGiJj2coDGK5W74eP" style="max-width:100%;height=100% margin-top=500px">
-  <div class="bottom-left"></div>
-  <div class="top-left"></div>
-  <div class="top-right"></div>
-  <div class="bottom-right"></div>
-  <div class="centered"></div>
+  <img src="https://drive.google.com/uc?id=1EQD23EBrIhCkJ-D-XrUbkF7i60iGOP6L" style="max-width:100%;height=100%">
   </div>
 </body>
-
 
 
 <head>
@@ -108,7 +101,7 @@ var x = elmnt.scrollHeight;
 <style>
 .collapsible {
   font-family: Helvetica;
-  background-color: white;
+  background-color: yellow;
   color: black;
   cursor: pointer;
   padding: 10px;
@@ -129,7 +122,7 @@ var x = elmnt.scrollHeight;
 
 .collapsible:after {
   content: '\002B';
-  color: white;
+  color: black;
   font-weight: bold;
   float: right;
   margin-left: 5px;
@@ -144,7 +137,7 @@ var x = elmnt.scrollHeight;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: white;
+  background-color: black;
 }
 
 	.search {
@@ -171,7 +164,7 @@ var x = elmnt.scrollHeight;
 </head>
 <body>
 
-<button class="collapsible">Search Individual</button>
+<button class="collapsible"><u>Check Individual Progress</u></button>
 <div class="content">
   <div class="search">
   <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/c181b341-7008-4233-8906-02d824345f66/page/HmtRC" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -179,7 +172,7 @@ var x = elmnt.scrollHeight;
 </div>
 
 
-<button class="collapsible">Check Records</button>
+<button class="collapsible"><u>Check Submission</u></button>
 <div class="content">
   <div class="search">
   <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/9b053375-2c3b-4125-9cb8-a1b4b5826519/page/HmtRC" frameborder="0" style="border:0" allowfullscreen></iframe>
@@ -204,43 +197,45 @@ for (i = 0; i < coll.length; i++) {
 </script>
 
 </body>
-<br>
+
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .bottom {
 font-family: 'Lobster';
-background-color: white;
+background-color: black;
 text-align: center;
+color: white;
 width: 100%;
 }
 
 .singapore {
 padding-top: 5px;
 padding-bottom: 5px;
-font-size: 22px;
+font-size: 14px;
 font-weight: bold;
-color: black;
-background-color: white;
+color: white;
+background-color: black;
 }
 
 .link {
 line-height: 1.6;
 padding-bottom: 5px;
-font-size: 16px;
+font-size: 14px;
 text-decoration: underline;
-color: black;
-background-color: white;
+color: white;
+background-color: black;
 }
 
-.link a:link {color: black;}
-.link a:visited {color: red;}
+.link a:link {color: white;}
+.link a:visited {color: white;}
 .link a:hover {color: #73c2fb;}
 .link a:active {color: #73c2fb;}
 
   @media screen and (max-width: 700px) {
-  .singapore {font-size: 20px;} 
+  .singapore {font-size: 14px;} 
   .link {font-size: 14px;}
 </style>
 </head>
@@ -248,7 +243,7 @@ background-color: white;
 <body>
 <div class="bottom">
 	<div class="singapore">
-    All around Singapore
+    
 </div>
 <div class="bottom">
 	<div class="link">
