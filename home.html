@@ -124,19 +124,22 @@ var x = elmnt.scrollHeight;
 <style>
 .blackbox {
   background-color: black;
-  height: 40px;
+  height: 50px;
   width: 100%;
-  padding: 0px;
-  margin-top: -40px;
+  padding: 00px;
   position: absolute;
-  z-index: 1;
-  text-align: center;
+  margin-left: 66%;
+  margin-top: -50px;
+  z-index: 10;
+  text-align: right;
+  color: yellow;
+  font-family: helvetica;
 }
 </style>
 </head>
 <body>
-
 <div class="blackbox">
+<h2 style="font-size:3vw"><b><u>hi</u></b></h2>
 </div>
 </body>
 
@@ -144,7 +147,7 @@ var x = elmnt.scrollHeight;
 <style>
 .top100 {
  background-color: black;
- margin-top: -80px;
+ position: relative;
  z-index: 2;
  text-align: center;
  margin: auto;
@@ -157,7 +160,9 @@ var x = elmnt.scrollHeight;
 	.top100 embed {
 
 	width: 100%;
-	height: 100%;}
+	height: 200px;}
+
+  @media screen and (max-width: 600px) {.top100 embed {width: 100%; height: 450px;}
 
 </style>
 </head>
